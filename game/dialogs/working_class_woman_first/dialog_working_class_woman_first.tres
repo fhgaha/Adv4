@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cl7gbwoyi26q1"]
+
+[ext_resource type="Script" path="res://game/dialogs/working_class_woman_first/dialog_working_class_woman_first.gd" id="1_oyb5x"]
+
+[resource]
+resource_name = "WorkingClassWomanFirst"
+script = ExtResource("1_oyb5x")
+script_name = "WorkingClassWomanFirst"
+options = Array[Resource("res://addons/popochiu/engine/objects/dialog/popochiu_dialog_option.gd")]([])

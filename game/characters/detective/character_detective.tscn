@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://cs22o7bx8gkpi"]
+
+[ext_resource type="Script" path="res://game/characters/detective/character_detective.gd" id="1_ihgcq"]
+[ext_resource type="Texture2D" uid="uid://dd1ruw521xok1" path="res://assets/tex/detective/detective_placeholder.png" id="2_6isuj"]
+
+[node name="CharacterDetective" type="Area2D"]
+script = ExtResource("1_ihgcq")
+popochiu_placeholder = null
+script_name = "Detective"
+description = "Detective"
+cursor = 8
+interaction_polygon = PackedVector2Array()
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="."]
+visible = false
+polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+
+[node name="ScalingPolygon" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0)
+
+[node name="BaselineHelper" type="Line2D" parent="."]
+visible = false
+points = PackedVector2Array(-10000, 0, 10000, 0)
+width = 1.0
+
+[node name="WalkToHelper" type="Marker2D" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="WalkToHelper"]
+offset_left = -2.5
+offset_top = -2.5
+offset_right = 2.5
+offset_bottom = 2.5
+color = Color(0, 1, 1, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_6isuj")
+
+[node name="DialogPos" type="Marker2D" parent="."]
+visible = false

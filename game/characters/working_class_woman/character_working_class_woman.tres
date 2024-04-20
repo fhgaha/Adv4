@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bxxpjfyroli6b"]
+
+[ext_resource type="Script" path="res://game/characters/working_class_woman/character_working_class_woman_state.gd" id="1_vsccn"]
+
+[resource]
+resource_name = "WorkingClassWoman"
+script = ExtResource("1_vsccn")
+script_name = "WorkingClassWoman"
+scene = "res://game/characters/working_class_woman/character_working_class_woman.tscn"
